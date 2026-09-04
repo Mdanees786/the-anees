@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* left-right center */
+    align-items: center;     /* top-bottom center */
+}
+
+h1 {
+    text-align: center;
+}
+
+.color {
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
