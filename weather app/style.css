@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+
+min-height: 100vh;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+background: linear-gradient(
+    135deg,
+    #74ebd5,
+    #ACB6E5
+);
+
+}
+
+.weather-container {
+
+width: 400px;
+
+padding: 30px;
+
+text-align: center;
+
+}
+
+.weather-container > h1 {
+
+color: white;
+
+margin-bottom: 25px;
+
+font-size: 32px;
+
+}
+
+/* Search Box */
+
+.search-box {
+
+```
+display: flex;
+
+gap: 10px;
+
+margin-bottom: 25px;
+```
+
+}
+
+.search-box input {
+
+```
+flex: 1;
+
+padding: 14px;
+
+border: none;
+
+outline: none;
+
+border-radius: 10px;
+
+font-size: 16px;
+```
+
+}
+
+.search-box button {
+
+```
+padding: 14px 20px;
+
+border: none;
+
+border-radius: 10px;
+
+background: #ffffff;
+
+color: #333;
+
+font-size: 16px;
+
+cursor: pointer;
+
+transition: 0.3s;
+```
+
+}
+
+.search-box button:hover {
+
+```
+transform: scale(1.05);
+
+background: #333;
+
+color: white;
+```
+
+}
+
+/* Weather Card */
+
+.weather-card {
+
+```
+background: rgba(255, 255, 255, 0.25);
+
+backdrop-filter: blur(10px);
+
+padding: 30px;
+
+border-radius: 20px;
+
+color: white;
+
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+```
+
+}
+
+.weather-card h2 {
+
+```
+font-size: 28px;
+
+margin-bottom: 10px;
+```
+
+}
+
+.weather-status {
+
+```
+font-size: 20px;
+
+margin-bottom: 15px;
+```
+
+}
+
+.temperature {
+
+```
+font-size: 60px;
+
+margin-bottom: 30px;
+```
+
+}
+
+/* Weather Details */
+
+.weather-details {
+
+```
+display: flex;
+
+justify-content: space-between;
+
+gap: 15px;
+```
+
+}
+
+.detail-card {
+
+```
+flex: 1;
+
+display: flex;
+
+align-items: center;
+
+gap: 10px;
+
+background: rgba(255, 255, 255, 0.15);
+
+padding: 15px;
+
+border-radius: 12px;
+```
+
+}
+
+.detail-card span {
+
+```
+font-size: 28px;
+```
+
+}
+
+.detail-card p {
+
+```
+font-size: 13px;
+```
+
+}
+
+.detail-card h3 {
+
+```
+margin-top: 5px;
+```
+
+}
+
+/* Responsive Design */
+
+@media (max-width: 450px) {
+
+```
+.weather-container {
+
+    width: 100%;
+
+    padding: 20px;
+
+}
+
+
+.weather-details {
+
+    flex-direction: column;
+
+}
+
+
+.search-box {
+
+    flex-direction: column;
+
+}
+```
+
+}

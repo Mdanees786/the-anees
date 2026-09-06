@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="weather-container">
+
+    <h1>🌤 Smart Weather</h1>
+
+    <!-- Search Box -->
+    <div class="search-box">
+
+        <input 
+            type="text" 
+            id="cityInput" 
+            placeholder="Enter city name"
+        >
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- Weather Card -->
+    <div class="weather-card">
+
+        <h2 id="cityName">Delhi</h2>
+
+        <p class="weather-status">
+            ☀️ Sunny
+        </p>
+
+        <h1 class="temperature">
+            32°C
+        </h1>
+
+
+        <!-- Weather Details -->
+
+        <div class="weather-details">
+
+            <div class="detail-card">
+
+                <span>💧</span>
+
+                <div>
+                    <p>Humidity</p>
+
+                    <h3 id="humidity">
+                        60%
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>🌬️</span>
+
+                <div>
+
+                    <p>Wind Speed</p>
+
+                    <h3 id="wind">
+                        10 km/h
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+<script src="script.js"></script>
+
+</body>
+</html>
