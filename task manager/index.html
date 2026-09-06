@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="header">
+            <h1>Smart Task Manager</h1>
+            <p>Manage your daily tasks easily 🚀</p>
+        </div>
+
+
+        <!-- Add Task Section -->
+        <div class="task-input">
+
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter your task..."
+            >
+
+            <button id="addBtn">
+                Add Task
+            </button>
+
+        </div>
+
+
+        <!-- Task Section -->
+        <div class="task-section">
+
+            <h2>Your Tasks</h2>
+
+            <ul id="taskList">
+
+                <!-- Sample Task -->
+                <li class="task">
+
+                    <span class="task-name">
+                        Learn JavaScript
+                    </span>
+
+                    <div class="buttons">
+
+                        <button class="complete-btn">
+                            ✓
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </li>
+
+
+                <li class="task completed">
+
+                    <span class="task-name">
+                        Practice DSA
+                    </span>
+
+                    <div class="buttons">
+
+                        <button class="complete-btn">
+                            ✓
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Status -->
+        <div class="status">
+
+            <p>
+                Total Tasks:
+                <span id="taskCount">2</span>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
